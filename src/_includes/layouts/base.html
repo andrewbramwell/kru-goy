@@ -61,12 +61,8 @@
         <main id="main">
             {% block body %}{% endblock %}
         </main>
-        {# Add CTA to all pages except contact page #}
-        {% if page.url != "/contact/" %}
-            {% include 'components/cta-262.html' %}
-        {% endif %}
 
-        {% include "components/footer-842.html" %}
+        {% include "components/footer-308.html" %}
 
     </body>
 </html>

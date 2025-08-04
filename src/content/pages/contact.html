@@ -5,7 +5,6 @@ permalink: 'contact/'
 eleventyNavigation:
     key: Contact Us
     order: 600
-    hideOnDesktop: true
 ---
 
 {% extends "layouts/base.html" %}
@@ -75,6 +74,23 @@ eleventyNavigation:
             <label class="cs-label cs-phone">
                 Phone
                 <input class="cs-input" required type="number" id="phone-1403" name="phone" placeholder="Phone">
+            </label>
+            <label class="cs-label">
+                Course of Interest*
+                <select class="cs-input" required id="course-1879" name="course">
+                    <option value="">Please select a course...</option>
+                    <option value="Thai Massage">Thai Massage</option>
+                    <option value="Sports Massage">Sports Massage</option>
+                    <option value="Beauty Therapy">Beauty Therapy</option>
+                    <option value="Deep Tissue Massage">Deep Tissue Massage</option>
+                    <option value="Pregnancy Massage">Pregnancy Massage</option>
+                    <option value="Lymphatic Drainage">Lymphatic Drainage</option>
+                    <option value="Hot Stone Therapy">Hot Stone Therapy</option>
+                    <option value="Foot Reflexology">Foot Reflexology</option>
+                    <option value="Indian Head Massage">Indian Head Massage</option>
+                    <option value="Japanese Head Spa">Japanese Head Spa</option>
+                    <option value="Facial Massage">Facial Massage</option>
+                </select>
             </label>
             <label class="cs-label">
                 Message
