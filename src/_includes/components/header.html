@@ -17,19 +17,16 @@
                 </a>
             </div>
             <div class="cs-top-social">
-                <a href="" class="cs-social-link">
+                <a href="{{client.socials.facebook}}" target="_blank" class="cs-social-link">
                     <img class="cs-social-icon" src="/assets/svgs/face-grey.svg" alt="logo" width="12" height="12" aria-hidden="true" decoding="async">
-                </a>
-                <a href="" class="cs-social-link">
-                    <img class="cs-social-icon" src="/assets/svgs/insta-grey.svg" alt="logo" width="12" height="12" aria-hidden="true" decoding="async">
                 </a>
             </div>
         </div>
     </div>
     <div class="cs-container">
         <!--Nav Logo-->
-        <a href="" class="cs-logo" aria-label="back to home">
-            <img src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Logos/consulting-logo.svg" alt="logo" width="197" height="43" aria-hidden="true" decoding="async">
+        <a href="/" class="cs-logo" aria-label="back to home">
+            <img src="/assets/svgs/logo.svg" alt="logo" width="197" height="43" aria-hidden="true" decoding="async">
         </a>
         <!--Navigation List-->
         <nav class="cs-nav" role="navigation">
@@ -67,7 +64,7 @@
 
                                 <span class="cs-li-link {{ activeClass }}">
                                     {{ entry.key }}
-                                    <img class="cs-drop-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/down-green.svg" alt="dropdown icon" width="15" height="15" decoding="async" aria-hidden="true">
+                                    <img class="cs-drop-icon" src="/assets/svgs/down-green.svg" alt="dropdown icon" width="15" height="15" decoding="async" aria-hidden="true">
                                 </span>
                                 <ul class="cs-drop-ul">
                                     {% for child in entry.children %}

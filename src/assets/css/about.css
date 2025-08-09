@@ -770,3 +770,305 @@
     color: #fff;
   }
 }
+/*-- -------------------------- -->
+<---        Content Page        -->
+<--- -------------------------- -*/
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+  #content-page-1945 {
+    padding: var(--sectionPadding);
+    padding-bottom: 1.5rem;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+  }
+  #content-page-1945 .cs-container {
+    width: 100%;
+    max-width: 80rem;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* 48px - 64px */
+    gap: clamp(3rem, 6vw, 4rem);
+    position: relative;
+  }
+  #content-page-1945 .cs-content {
+    text-align: left;
+    width: 100%;
+    max-width: 47.75rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  #content-page-1945 .cs-title {
+    font-size: var(--headerFontSize);
+    font-weight: 900;
+    line-height: 1.2em;
+    text-align: inherit;
+    width: 100%;
+    max-width: 100%;
+    margin: 0 0 1rem 0;
+    color: var(--headerColor);
+    position: relative;
+  }
+  #content-page-1945 h2,
+  #content-page-1945 h3,
+  #content-page-1945 h4,
+  #content-page-1945 h5,
+  #content-page-1945 h6 {
+    font-weight: 700;
+    text-align: inherit;
+    margin: 0 0 1rem 0;
+    color: var(--headerColor);
+  }
+  #content-page-1945 h2 {
+    font-size: 2rem;
+    margin-top: 2rem;
+  }
+  #content-page-1945 h3 {
+    font-size: 1.5rem;
+    color: var(--primary);
+  }
+  #content-page-1945 h4,
+  #content-page-1945 h5,
+  #content-page-1945 h6 {
+    font-size: 1.25rem;
+  }
+  #content-page-1945 .cs-button-solid {
+    margin-bottom: 2rem;
+  }
+  #content-page-1945 p {
+    font-size: var(--bodyFontSize);
+    line-height: 1.5em;
+    text-align: inherit;
+    width: 100%;
+    margin: 0 0 1rem 0;
+    color: var(--bodyTextColor);
+  }
+  #content-page-1945 p:last-of-type {
+    margin-bottom: 2rem;
+  }
+  #content-page-1945 p a {
+    font-size: inherit;
+    line-height: inherit;
+    text-decoration: underline;
+    color: var(--primary);
+    filter: brightness(120%);
+  }
+  #content-page-1945 ol {
+    margin: 0 0 2rem 0;
+    padding-left: 1.5rem;
+    color: var(--headerColor);
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  #content-page-1945 ol li {
+    font-size: 1rem;
+    line-height: 1.5em;
+  }
+  #content-page-1945 ol li strong {
+    color: var(--headerColor);
+  }
+  #content-page-1945 ol li p:last-of-type {
+    margin: 0;
+  }
+  #content-page-1945 ul {
+    margin: 0 0 2rem 0;
+    padding-left: 1.5rem;
+    color: var(--bodyTextColor);
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  #content-page-1945 ul li {
+    list-style: none;
+    line-height: 1.5em;
+    font-size: 1rem;
+    color: inherit;
+    position: relative;
+  }
+  #content-page-1945 ul li strong {
+    color: var(--headerColor);
+  }
+  #content-page-1945 ul li:before {
+    /* custom list bullet */
+    content: "";
+    width: 3px;
+    height: 3px;
+    background: currentColor;
+    opacity: 1;
+    border-radius: 50%;
+    display: block;
+    position: absolute;
+    top: 0.625rem;
+    left: -0.75rem;
+  }
+  #content-page-1945 .cs-image-group {
+    font-size: min(2.29vw, 1rem);
+    width: 29.875em;
+    height: 47.75em;
+    display: none;
+    position: relative;
+    z-index: 2;
+  }
+  #content-page-1945 .cs-picture {
+    width: 29.4375em;
+    height: 42.5625em;
+    box-sizing: border-box;
+    background-color: #f7f7f7;
+    overflow: hidden;
+    border: 2px solid #111418;
+    border-radius: 16.25rem;
+    position: absolute;
+    right: 0;
+    z-index: -1;
+  }
+  #content-page-1945 .cs-picture img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: transform 0.7s;
+  }
+  #content-page-1945 .cs-graphic {
+    height: auto;
+    position: absolute;
+  }
+  #content-page-1945 .cs-twirl {
+    width: 11.0625em;
+    height: auto;
+    top: 0.9375em;
+    right: 0;
+    z-index: 1;
+  }
+  #content-page-1945 .cs-peach {
+    width: 5.375em;
+    height: auto;
+    top: 0.375em;
+    right: 5.6875em;
+  }
+  #content-page-1945 .cs-blob {
+    width: 19.1875em;
+    height: auto;
+    bottom: 0;
+    left: 0;
+    z-index: -2;
+  }
+  #content-page-1945 .cs-leaf {
+    width: 16.4375em;
+    height: auto;
+    right: 0;
+    bottom: 0;
+    z-index: -3;
+  }
+}
+/* Desktop - 1024px */
+@media only screen and (min-width: 64rem) {
+  #content-page-1945 .cs-container {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+  #content-page-1945 .cs-image-group {
+    font-size: min(1.2vw, 1rem);
+    display: block;
+    flex: none;
+  }
+}
+/* Dark Mode */
+@media only screen and (min-width: 0rem) {
+  body.dark-mode #content-page-1945 {
+    background-color: rgba(0, 0, 0, 0.2);
+  }
+  body.dark-mode #content-page-1945 .cs-title,
+  body.dark-mode #content-page-1945 .cs-text,
+  body.dark-mode #content-page-1945 h1,
+  body.dark-mode #content-page-1945 h2,
+  body.dark-mode #content-page-1945 h3,
+  body.dark-mode #content-page-1945 h4,
+  body.dark-mode #content-page-1945 h5,
+  body.dark-mode #content-page-1945 h6 li,
+  body.dark-mode #content-page-1945 p {
+    color: var(--bodyTextColorWhite);
+  }
+  body.dark-mode #content-page-1945 li strong,
+  body.dark-mode #content-page-1945 p strong {
+    color: #fff;
+  }
+  body.dark-mode #content-page-1945 p,
+  body.dark-mode #content-page-1945 li {
+    color: #ebebeb;
+  }
+  body.dark-mode #content-page-1945 .cs-picture {
+    border-color: var(--accent);
+  }
+}
+/* Large Desktop 1300px */
+@media only screen and (min-width: 81.25rem) {
+  #content-page-1945 .cs-content-reverse .cs-container {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+  #content-page-1945 .cs-content-reverse .cs-image-group {
+    width: 38em;
+    height: 30.125em;
+    margin-top: 3rem;
+    order: -1;
+  }
+  #content-page-1945 .cs-content-reverse .cs-picture {
+    width: 38em;
+  }
+  #content-page-1945 .cs-content-reverse .cs-dots {
+    top: -1em;
+  }
+}
+/* Mobile - 360px */
+/* you can copy and paste these styles into the section CSS where you placed the #list-833 HTML, or you can place it in your global stylesheet so you can reuse the HTML in any Side By Side section on your site. That way when you make changes to it, it will also change everywhere in the site */
+#stats-833 {
+  width: 100%;
+  max-width: 25rem;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  column-gap: 0.75rem;
+}
+#stats-833 .cs-item {
+  list-style: none;
+  width: 32%;
+  max-width: 9.375rem;
+  /* making flex so we can align a heading with 1 line to the bottom */
+  display: flex;
+  flex-direction: column;
+  align-self: stretch;
+  align-content: space-between;
+}
+#stats-833 .cs-number {
+  /* 39px - 49px */
+  font-size: clamp(2.4375rem, 5vw, 3.0625rem);
+  line-height: 1.2em;
+  font-weight: 700;
+  text-align: left;
+  color: var(--primary);
+  display: block;
+  /* 8px - 16px */
+  margin: 0 0 clamp(0.25rem, 0.5vw, 1rem);
+}
+#stats-833 .cs-h3 {
+  /* 16px - 20px */
+  font-size: clamp(1rem, 2vw, 1.25rem);
+  line-height: 1.2em;
+  text-align: left;
+  /* auto margin top will push text to bottom if there's only one line */
+  margin: auto 0 0;
+  color: var(--headerColor);
+}
+/* Dark Mode, copy and paste only the styles inside the #list-833 brackets into your section's dark mode media query */
+body.dark-mode #stats-833 .cs-number,
+body.dark-mode #stats-833 .cs-h3 {
+  color: var(--bodyTextColorWhite);
+}

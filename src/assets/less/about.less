@@ -863,4 +863,356 @@
     }
 }
 
+/*-- -------------------------- -->
+<---        Content Page        -->
+<--- -------------------------- -*/
+
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+    #content-page-1945 {
+        padding: var(--sectionPadding);
+        padding-bottom: (24/16rem);
+        overflow: hidden;
+        position: relative;
+        z-index: 1;
+
+        .cs-container {
+            width: 100%;
+            max-width: (1280/16rem);
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            /* 48px - 64px */
+            gap: clamp(3rem, 6vw, 4rem);
+            position: relative;
+        }
+
+        .cs-content {
+            text-align: left;
+            width: 100%;
+            max-width: (764/16rem);
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        .cs-title {
+            font-size: var(--headerFontSize);
+            font-weight: 900;
+            line-height: 1.2em;
+            text-align: inherit;
+            width: 100%;
+            max-width: 100%;
+            margin: 0 0 (16/16rem) 0;
+            color: var(--headerColor);
+            position: relative;
+        }
+
+        h2, h3, h4, h5, h6 {
+            font-weight: 700;
+            text-align: inherit;
+            margin: 0 0 (16/16rem) 0;
+            color: var(--headerColor);
+        }
+
+        h2 {
+            font-size: (32/16rem);
+            margin-top: (32/16rem);
+        }
+
+        h3 {
+            font-size: (24/16rem);
+            color: var(--primary);
+        }
+
+        h4, h5, h6 {
+            font-size: (20/16rem);
+        }
+
+        .cs-button-solid {
+            margin-bottom: (32/16rem);
+        }
+
+        p {
+            font-size: var(--bodyFontSize);
+            line-height: 1.5em;
+            text-align: inherit;
+            width: 100%;
+            margin: 0 0 (16/16rem) 0;
+            color: var(--bodyTextColor);
+
+            &:last-of-type {
+                margin-bottom: (32/16rem);
+            }
+
+            a {
+                font-size: inherit;
+                line-height: inherit;
+                text-decoration: underline;
+                color: var(--primary);
+                filter: brightness(120%);
+            }
+        }
+
+        ol {
+            margin: 0 0 (32/16rem) 0;
+            padding-left: (24/16rem);
+            color: var(--headerColor);
+            display: flex;
+            flex-direction: column;
+            gap: (16/16rem);
+
+            li {
+                font-size: (16/16rem);
+                line-height: 1.5em;
+                
+                strong {
+                    color: var(--headerColor);
+                }
+
+                p {
+                    &:last-of-type {
+                        margin: 0;
+                    }
+                }
+            }
+        }
+
+        ul {
+            margin: 0 0 (32/16rem) 0;
+            padding-left: (24/16rem);
+            color: var(--bodyTextColor);
+            display: flex;
+            flex-direction: column;
+            gap: (16/16rem);
+
+            li {
+                list-style: none;
+                line-height: 1.5em;
+                font-size: (16/16rem);
+                color: inherit;
+                position: relative;
+
+                strong {
+                    color: var(--headerColor);
+                }
+
+                &:before {
+                    /* custom list bullet */
+                    content: "";
+                    width: 3px;
+                    height: 3px;
+                    background: currentColor;
+                    opacity: 1;
+                    border-radius: 50%;
+                    display: block;
+                    position: absolute;
+                    top: (10/16rem);
+                    left: (-12/16rem);
+                }
+            }
+        }
+
+        .cs-image-group {
+            font-size: min(2.29vw, 1rem);
+            width: (478/16em);
+            height: (764/16em);
+            display: none;
+            position: relative;
+            z-index: 2;
+        }
+
+        .cs-picture {
+            width: (471/16em);
+            height: (681/16em);
+            box-sizing: border-box;
+            background-color: #f7f7f7;
+            overflow: hidden;
+            border: 2px solid #111418;
+            border-radius: (260/16rem);
+            position: absolute;
+            right: 0;
+            z-index: -1;
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                position: absolute;
+                top: 0;
+                left: 0;
+                transition: transform 0.7s;
+            }
+        }
+
+        .cs-graphic {
+            height: auto;
+            position: absolute;
+        }
+
+        .cs-twirl {
+            width: (177/16em);
+            height: auto;
+            top: (15/16em);
+            right: 0;
+            z-index: 1;
+        }
+
+        .cs-peach {
+            width: (86/16em);
+            height: auto;
+            top: (6/16em);
+            right: (91/16em);
+        }
+
+        .cs-blob {
+            width: (307/16em);
+            height: auto;
+            bottom: 0;
+            left: 0;
+            z-index: -2;
+        }
+
+        .cs-leaf {
+            width: (263/16em);
+            height: auto;
+            right: 0;
+            bottom: 0;
+            z-index: -3;
+        }
+    }
+}
+
+/* Desktop - 1024px */
+@media only screen and (min-width: 64rem) {
+    #content-page-1945 {
+        .cs-container {
+            flex-direction: row;
+            align-items: flex-start;
+        }
+
+        .cs-image-group {
+            font-size: min(1.2vw, 1rem);
+            display: block;
+            flex: none;
+        }
+    }
+}
+
+/* Dark Mode */
+@media only screen and (min-width: 0rem) {
+    body.dark-mode {
+        #content-page-1945 {
+            background-color: rgba(0, 0, 0, 0.2);
+
+            .cs-title,
+            .cs-text,
+            h1, h2, h3, h4, h5, h6
+            li, p {
+                color: var(--bodyTextColorWhite);
+            }
+
+            li, p {
+                strong {
+                    color: #fff;
+                }
+            }
+
+            p,
+            li {
+                color: #ebebeb;
+            }
+
+            .cs-picture {
+                border-color: var(--accent);
+            }
+        }
+    }
+}
+
+/* Large Desktop 1300px */
+@media only screen and (min-width: 81.25rem) {
+    #content-page-1945 {
+        .cs-content-reverse {
+            .cs-container {
+                flex-direction: row;
+                align-items: flex-start;
+            }
+    
+            .cs-image-group {
+                width: (608/16em);
+                height: (482/16em);
+                margin-top: (48/16rem);
+                order: -1;
+            }
+    
+            .cs-picture {
+                width: (608/16em);
+            }
+    
+            .cs-dots {
+                top: (-16/16em);
+            }
+        }
+    }
+}
+
+
+/* Mobile - 360px */
+/* you can copy and paste these styles into the section CSS where you placed the #list-833 HTML, or you can place it in your global stylesheet so you can reuse the HTML in any Side By Side section on your site. That way when you make changes to it, it will also change everywhere in the site */
+#stats-833 {
+    width: 100%;
+    max-width: (400/16rem);
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: (12/16rem);
+
+    .cs-item {
+        list-style: none;
+        width: 32%;
+        max-width: (150/16rem);
+        /* making flex so we can align a heading with 1 line to the bottom */
+        display: flex;
+        flex-direction: column;
+        align-self: stretch;
+        align-content: space-between;
+    }
+
+    .cs-number {
+        /* 39px - 49px */
+        font-size: clamp(2.4375rem, 5vw, 3.0625rem);
+        line-height: 1.2em;
+        font-weight: 700;
+        text-align: left;
+        color: var(--primary);
+        display: block;
+        /* 8px - 16px */
+        margin: 0 0 clamp(0.25rem, 0.5vw, 1rem);
+    }
+
+    .cs-h3 {
+        /* 16px - 20px */
+        font-size: clamp(1rem, 2vw, 1.25rem);
+        line-height: 1.2em;
+        text-align: left;
+        /* auto margin top will push text to bottom if there's only one line */
+        margin: auto 0 0;
+        color: var(--headerColor);
+    }
+}
+
+/* Dark Mode, copy and paste only the styles inside the #list-833 brackets into your section's dark mode media query */
+body.dark-mode {
+    #stats-833 {
+        .cs-number,
+        .cs-h3 {
+            color: var(--bodyTextColorWhite);
+        }
+    }
+}
+
                                 

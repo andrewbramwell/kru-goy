@@ -1,7 +1,6 @@
 ---
-title: 'Pixel Perfect Websites | Code Stitch Web Designs | Denver, CO'
-description: 'Meta description for the page'
-preloadImg: '/assets/images/landing.jpg'
+title: 'Massage Courses | Kru Goy UK | Manchester '
+description: "Professional Thai massage training in Manchester. Kru Goy UK empowers Thai women with certified courses, business skills & ongoing career support."
 permalink: '/'
 tags: 'sitemap' # Sitemap will use all pages in content/, due to content.json. As index.html is not included in content/ we need to manually add the sitemap tag to this page (only).
 eleventyNavigation:
@@ -14,7 +13,7 @@ eleventyNavigation:
 {% block head %}
     <link rel="stylesheet" href="/assets/css/local.css"/>
     <link rel="stylesheet" href="/assets/css/critical.css"/>
-    <link rel="stylesheet" href="/assets/css/components.css"/>
+    <link rel="preload" as="image" href="{% getUrl "/assets/images/hero2.jpg" | resize({width: 1036, height: 1352}) | avif %}">
 
     <!-- Script for Netlify Identity -->
     <script defer src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
@@ -89,13 +88,13 @@ eleventyNavigation:
             <p class="cs-text">
                 Learn authentic massage techniques from certified instructors. Comprehensive courses for beginners and advanced practitioners in Manchester's premier massage training school.
             </p>
-            <a href="" class="cs-button-solid">Book an Appointment</a>
+            <a href="/contact/" class="cs-button-solid">Contact Us</a>
             <div class="cs-info">
                 <img class="cs-info-pic" loading="lazy" decoding="async" src="/assets/images/gal-2.webp" alt="graphic" width="179" height="225" aria-hidden="true">
                 <div class="cs-wrapper">
                     <img class="cs-icon" src="/assets/svgs/gold-pin.svg" loading="lazy" decoding="async" alt="icon" width="33" height="38" aria-hidden="true">
                     <div class="cs-flex">
-                        <span class="cs-address">  {{client.address.lineOne}}, {{client.address.lineTwo}}, {{client.address.city}}, {{client.address.zip}}</span>  <span class="cs-slogan">Backed by science, perfected to an art</span>    
+                        <span class="cs-address">  {{client.address.lineOne}}, {{client.address.lineTwo}}, {{client.address.city}}, {{client.address.zip}}</span>     
                     </div>
                 </div>
             </div>
@@ -103,24 +102,23 @@ eleventyNavigation:
         <div class="cs-image-group">
             <picture class="cs-picture">
                 <!--Mobile Image -->
-                <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/owner2.jpg" | resize({width: 471, height: 615}) | avif %}" type="image/avif">
-                <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/owner2.jpg" | resize({width: 471, height: 615}) | webp %}" type="image/webp">
-                <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/owner2.jpg" | resize({width: 471, height: 615}) | jpeg %}" type="image/jpeg">
+                <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/hero2.jpg" | resize({width: 471, height: 615}) | avif %}" type="image/avif">
+                <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/hero2.jpg" | resize({width: 471, height: 615}) | webp %}" type="image/webp">
+                <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/hero2.jpg" | resize({width: 471, height: 615}) | jpeg %}" type="image/jpeg">
                 <!--Tablet Image -->
-                <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/owner2.jpg" | resize({width: 932, height: 1216}) | avif %}" type="image/avif">
-                <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/owner2.jpg" | resize({width: 932, height: 1216}) | webp %}" type="image/webp">
-                <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/owner2.jpg" | resize({width: 932, height: 1216}) | jpeg %}" type="image/jpeg">
+                <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/hero2.jpg" | resize({width: 932, height: 1216}) | avif %}" type="image/avif">
+                <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/hero2.jpg" | resize({width: 932, height: 1216}) | webp %}" type="image/webp">
+                <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/hero2.jpg" | resize({width: 932, height: 1216}) | jpeg %}" type="image/jpeg">
                 <!--Desktop Image -->
-                <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/owner2.jpg" | resize({width: 1036, height: 1352}) | avif %}" type="image/avif">
-                <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/owner2.jpg" | resize({width: 1036, height: 1352}) | webp %}" type="image/webp">
-                <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/owner2.jpg" | resize({width: 1036, height: 1352}) | jpeg %}" type="image/jpeg">
-                <img src="{% getUrl "/assets/images/owner2.jpg" | resize({width: 1036, height: 1352}) | jpeg %}" alt="image description" width="518" height="676" loading="lazy" decoding="async" aria-hidden="true">
+                <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/hero2.jpg" | resize({width: 1036, height: 1352}) | avif %}" type="image/avif">
+                <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/hero2.jpg" | resize({width: 1036, height: 1352}) | webp %}" type="image/webp">
+                <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/hero2.jpg" | resize({width: 1036, height: 1352}) | jpeg %}" type="image/jpeg">
+                <img src="{% getUrl "/assets/images/hero2.jpg" | resize({width: 1036, height: 1352}) | jpeg %}" alt="image description" width="518" height="676" loading="lazy" decoding="async" aria-hidden="true">
             </picture>
             <img class="cs-graphic cs-peach" loading="lazy" decoding="async" src="/assets/svgs/green-blob.svg" alt="graphic" width="208" height="203" aria-hidden="true">
             <img class="cs-graphic cs-swirl" loading="lazy" decoding="async" src="/assets/svgs/beige-swirl.svg" alt="graphic" width="56" height="42" aria-hidden="true">
             <img class="cs-graphic cs-dots" loading="lazy" decoding="async" src="/assets/svgs/beige-dots.svg" alt="graphic" width="379" height="394" aria-hidden="true">
             <img class="cs-graphic cs-leaf" loading="lazy" decoding="async" src="/assets/svgs/leaf-right.svg" alt="graphic" width="179" height="225" aria-hidden="true">
-            <img class="cs-graphic cs-button" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/spinning-button.svg" alt="graphic" width="179" height="225" aria-hidden="true">
         </div>
     </div>
 </section>
@@ -198,43 +196,43 @@ eleventyNavigation:
             <img class="cs-graphic cs-beige" loading="lazy" decoding="async" src="/assets/svgs/gold-blob2.svg" alt="graphic" width="379" height="394" aria-hidden="true">
             <img class="cs-graphic cs-leaf" loading="lazy" decoding="async" src="/assets/svgs/leaf2.svg" alt="graphic" width="179" height="225" aria-hidden="true">
             <img class="cs-graphic cs-lines" loading="lazy" decoding="async" src="/assets/svgs/gold-grid.svg" alt="graphic" width="189" height="208" aria-hidden="true">
-            <div class="cs-info">
+            <!--<div class="cs-info">
                 <p class="cs-info-text">
                     <span class="cs-bold">Elected Secretary</span>
                     of Orange County Dermatology Society 2022-2024
                 </p>
-            </div>
+            </div>-->
         </div>
         <div class="cs-content">
             <div class="cs-flex">
                 <span class="cs-topper">About us</span>
-                <h2 class="cs-title">Welcome to Our Stitch Skin Dermatology</h2>
+                <h2 class="cs-title">About Kru Goy UK</h2>
             </div>
             <p class="cs-text-large">
-                Stitch Skin Dermatology & Aesthetics is a California-based professional corp start-up that is redefining the way dermatology and medical aesthetics is practiced and delivered.
+                Empowering Thai Women Through Professional Massage Training and Business Development in Manchester
             </p>
             <p class="cs-text">
-                We are seeing a new crop of medical practices emerge that are reimagining the patient's experience with traditional healthcare (e.g. One Medical for Primary Care, Forward for Preventative Care, KindBody for Fertility, Tia for Women's Health), however we can't say the same for Dermatology and Medical Aesthetics.
+                Founded by Kru Goy, who successfully operates her own established massage practice in Manchester, our school was created with a mission to support Thai women living in the UK. Drawing from years of hands-on business experience and deep knowledge of traditional Thai healing practices, Kru Goy understands the unique challenges and opportunities facing Thai women seeking to build independent careers in the wellness industry.
             </p>
             <ul id="list-1405" class="cs-ul">
                 <li class="cs-li">
-                    <img class="cs-icon" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/black-check.svg" alt="checkmark" width="24" height="24">
-                    Digital Solutions Provider Agency
+                    <img class="cs-icon" aria-hidden="true" loading="lazy" decoding="async" src="/assets/svgs/black-check.svg" alt="checkmark" width="24" height="24">
+                    Successful massage business owner
                 </li>
                 <li class="cs-li">
-                    <img class="cs-icon" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/black-check.svg" alt="checkmark" width="24" height="24">
-                    Unicode, UTF8 & Character Sets The Ultimate Guide
+                    <img class="cs-icon" aria-hidden="true" loading="lazy" decoding="async" src="/assets/svgs/black-check.svg" alt="checkmark" width="24" height="24">
+                    Dedicated to empowering women
                 </li>
                 <li class="cs-li">
-                    <img class="cs-icon" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/black-check.svg" alt="checkmark" width="24" height="24">
-                    WordPress Guides For The Advanced Beginner
+                    <img class="cs-icon" aria-hidden="true" loading="lazy" decoding="async" src="/assets/svgs/black-check.svg" alt="checkmark" width="24" height="24">
+                    Proven business development methods
                 </li>
                 <li class="cs-li">
-                    <img class="cs-icon" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/black-check.svg" alt="checkmark" width="24" height="24">
-                    Digital Clean Checklist Prepared New Year
+                    <img class="cs-icon" aria-hidden="true" loading="lazy" decoding="async" src="/assets/svgs/black-check.svg" alt="checkmark" width="24" height="24">
+                    Supportive community of graduates
                 </li>
             </ul>                  
-            <a href="" class="cs-button-solid">Book an Appointment</a>
+            <a href="/about/" class="cs-button-solid">About Us</a>
         </div>
     </div>
 </section>
@@ -247,53 +245,53 @@ eleventyNavigation:
     <div class="cs-container">
         <picture class="cs-picture">
             <!--Mobile Image -->
-            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/popular-1.jpg" | resize({width: 576, height: 720}) | avif %}" type="image/avif">
-            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/popular-1.jpg" | resize({width: 576, height: 720}) | webp %}" type="image/webp">
-            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/popular-1.jpg" | resize({width: 576, height: 720}) | jpeg %}" type="image/jpeg">
+            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/gal-2.jpg" | resize({width: 576, height: 720}) | avif %}" type="image/avif">
+            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/gal-2.jpg" | resize({width: 576, height: 720}) | webp %}" type="image/webp">
+            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/gal-2.jpg" | resize({width: 576, height: 720}) | jpeg %}" type="image/jpeg">
             <!--Tablet Image -->
-            <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/popular-1.jpg" | resize({width: 834, height: 1500}) | avif %}" type="image/avif">
-            <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/popular-1.jpg" | resize({width: 834, height: 1500}) | webp %}" type="image/webp">
-            <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/popular-1.jpg" | resize({width: 834, height: 1500}) | jpeg %}" type="image/jpeg">
+            <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/gal-2.jpg" | resize({width: 834, height: 1500}) | avif %}" type="image/avif">
+            <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/gal-2.jpg" | resize({width: 834, height: 1500}) | webp %}" type="image/webp">
+            <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/gal-2.jpg" | resize({width: 834, height: 1500}) | jpeg %}" type="image/jpeg">
             <!--Desktop Image -->
-            <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/popular-1.jpg" | resize({width: 1076, height: 1568}) | avif %}" type="image/avif">
-            <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/popular-1.jpg" | resize({width: 1076, height: 1568}) | webp %}" type="image/webp">
-            <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/popular-1.jpg" | resize({width: 1076, height: 1568}) | jpeg %}" type="image/jpeg">
-            <img src="{% getUrl "/assets/images/popular-1.jpg" | resize({width: 1076, height: 1568}) | jpeg %}" alt="image description" width="538" height="784" loading="lazy" decoding="async" aria-hidden="true">
+            <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/gal-2.jpg" | resize({width: 1076, height: 1568}) | avif %}" type="image/avif">
+            <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/gal-2.jpg" | resize({width: 1076, height: 1568}) | webp %}" type="image/webp">
+            <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/gal-2.jpg" | resize({width: 1076, height: 1568}) | jpeg %}" type="image/jpeg">
+            <img src="{% getUrl "/assets/images/gal-2.jpg" | resize({width: 1076, height: 1568}) | jpeg %}" alt="image description" width="538" height="784" loading="lazy" decoding="async" aria-hidden="true">
         </picture>
         <div class="cs-content">
-            <span class="cs-topper">Our Features</span>
-            <h2 class="cs-title">Accessible Wardrobe That Women Can Wear and Curate Over Time</h2>
+            <span class="cs-topper">Why Us</span>
+            <h2 class="cs-title">Why Choose Kru Goy UK</h2>
             <ul class="cs-card-group">
                 <li class="cs-li">
                     <picture class="cs-li-picture">
-                        <img class="cs-li-icon" aria-hidden="true" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/price-tag.svg" decoding="async" alt="icon" width="32" height="32" loading="lazy">
+                        <img class="cs-li-icon" aria-hidden="true" src="/assets/svgs/check-gold.svg" decoding="async" alt="icon" width="32" height="32" loading="lazy">
                     </picture>
                     <div class="cs-flex">
-                        <h3 class="cs-h3">Member Discount</h3>
+                        <h3 class="cs-h3">Proven Business Success</h3>
                         <p class="cs-li-text">
-                            It’s no secret that one person alone cannot overcome the greatest humanitarian crises, return them within 30 days for a full refund. 
+                            Learn from a practitioner who runs her own thriving Manchester massage practice, gaining real-world insights into building a profitable wellness business.
                         </p>
                     </div>
                 </li>
                 <li class="cs-li">
                     <picture class="cs-li-picture">
-                        <img class="cs-li-icon" aria-hidden="true" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/sheild.svg" decoding="async" alt="icon" width="32" height="32" loading="lazy">
+                        <img class="cs-li-icon" aria-hidden="true" src="/assets/svgs/united-kingdom.svg" decoding="async" alt="icon" width="32" height="32" loading="lazy">
                     </picture>
                     <div class="cs-flex">
-                        <h3 class="cs-h3">Safe Payment</h3>
+                        <h3 class="cs-h3">UK Market Expertise</h3>
                         <p class="cs-li-text">
-                            It’s no secret that one person alone cannot overcome the greatest humanitarian crises, return them within 30 days for a full refund. 
+                            Understand how to navigate the British wellness industry, from client expectations to regulations, ensuring your practice thrives in the local market.
                         </p>
                     </div>
                 </li>
                 <li class="cs-li">
                     <picture class="cs-li-picture">
-                        <img class="cs-li-icon" aria-hidden="true" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/bag.svg" decoding="async" alt="icon" width="32" height="32" loading="lazy">
+                        <img class="cs-li-icon" aria-hidden="true" src="/assets/svgs/bag.svg" decoding="async" alt="icon" width="32" height="32" loading="lazy">
                     </picture>
                     <div class="cs-flex">
-                        <h3 class="cs-h3">Shop with Confidence</h3>
+                        <h3 class="cs-h3">Comprehensive Career Support</h3>
                         <p class="cs-li-text">
-                            It’s no secret that one person alone cannot overcome the greatest humanitarian crises, return them within 30 days for a full refund. 
+                            Receive ongoing mentorship beyond graduation, from setting up your business to marketing strategies, helping you build a sustainable long-term career.
                         </p>
                     </div>
                 </li>
@@ -338,8 +336,8 @@ eleventyNavigation:
 <section id="services-2221">
     <div class="cs-container">
         <div class="cs-content">
-            <span class="cs-topper">WHAT WE DO</span>
-            <h2 class="cs-title">Our Special Services for You</h2>
+            <span class="cs-topper">Courses</span>
+            <h2 class="cs-title">Our Professional Massage Programmes</h2>
         </div>
         <ul class="cs-ul">
             <li class="cs-li">
@@ -348,7 +346,7 @@ eleventyNavigation:
                     <h3 class="cs-h3">VTCT Level 3 Thai Massage</h3>
                     <img class="cs-icon" loading="lazy" decoding="async" src="/assets/svgs/arrow.svg" alt="icon" width="48" height="48">
                     <p class="cs-text">
-                        Choose from our range of Photo booth options, including open-air to suit your wedding theme and style.
+                        Professional certification in traditional Thai massage techniques for practitioners seeking comprehensive training and official qualifications.
                     </p>
                 </a>
                 <picture class="cs-picture">
@@ -365,11 +363,11 @@ eleventyNavigation:
             </li>
             <li class="cs-li">
                 <span class="cs-number">02</span>
-                <a class="cs-link" href="/sports-massage/">
-                    <h3 class="cs-h3">VTCT Level 3 Sports Massage</h3>
+                <a class="cs-link" href="/body-massage/">
+                    <h3 class="cs-h3"> VTCT Body Massage</h3>
                     <img class="cs-icon" loading="lazy" decoding="async" src="/assets/svgs/arrow.svg" alt="icon" width="48" height="48">
                     <p class="cs-text">
-                        Choose from our range of Photo booth options, including open-air to suit your wedding theme and style.
+                        Complete body massage training covering Swedish, hot stone, and Indian head massage for comprehensive professional certification.
                     </p>
                 </a>
                 <picture class="cs-picture">
@@ -386,35 +384,14 @@ eleventyNavigation:
             </li>
             <li class="cs-li">
                 <span class="cs-number">03</span>
-                <a class="cs-link" href="/beauty-therapy/">
-                    <h3 class="cs-h3">VTCT Level 3 Beauty Therapy</h3>
-                    <img class="cs-icon" loading="lazy" decoding="async" src="/assets/svgs/arrow.svg" alt="icon" width="48" height="48">
-                    <p class="cs-text">
-                        Choose from our range of Photo booth options, including open-air to suit your wedding theme and style.
-                    </p>
-                </a>
-                <picture class="cs-picture">
-                    <!--Mobile Image -->
-                    <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/course/beauty-treatment.jpg" | resize({width: 576, height: 320}) | avif %}" type="image/avif">
-                    <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/course/beauty-treatment.jpg" | resize({width: 576, height: 320}) | webp %}" type="image/webp">
-                    <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/course/beauty-treatment.jpg" | resize({width: 576, height: 320}) | jpeg %}" type="image/jpeg">
-                    <!--Tablet Image -->
-                    <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/course/beauty-treatment.jpg" | resize({width: 576, height: 320}) | avif %}" type="image/avif">
-                    <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/course/beauty-treatment.jpg" | resize({width: 576, height: 320}) | webp %}" type="image/webp">
-                    <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/course/beauty-treatment.jpg" | resize({width: 576, height: 320}) | jpeg %}" type="image/jpeg">
-                    <img src="{% getUrl "/assets/images/course/beauty-treatment.jpg" | resize({width: 576, height: 320}) | jpeg %}" alt="beauty therapy" width="352" height="440" loading="lazy" decoding="async" aria-hidden="true">
-                </picture>
-            </li>
-            <li class="cs-li">
-                <span class="cs-number">04</span>
                 <a class="cs-link" href="/deep-tissue-massage/">
-                    <h3 class="cs-h3">CPD Deep Tissue Massage</h3>
+                    <h3 class="cs-h3">CPD Deep Tissue Advanced Massage</h3>
                     <img class="cs-icon" loading="lazy" decoding="async" src="/assets/svgs/arrow.svg" alt="icon" width="48" height="48">
                     <p class="cs-text">
-                        Choose from our range of Photo booth options, including open-air to suit your wedding theme and style.
+                        Advanced deep tissue techniques with tool-assisted therapy for experienced practitioners wanting to expand their therapeutic skills.
                     </p>
                 </a>
-                <picture class="cs-picture">
+                 <picture class="cs-picture">
                     <!--Mobile Image -->
                     <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/course/deep-tissue.jpg" | resize({width: 576, height: 320}) | avif %}" type="image/avif">
                     <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/course/deep-tissue.jpg" | resize({width: 576, height: 320}) | webp %}" type="image/webp">
@@ -427,12 +404,33 @@ eleventyNavigation:
                 </picture>
             </li>
             <li class="cs-li">
+                <span class="cs-number">04</span>
+                <a class="cs-link" href="/hot-stone-therapy/">
+                    <h3 class="cs-h3">CPD Hot Stone Massage</h3>
+                    <img class="cs-icon" loading="lazy" decoding="async" src="/assets/svgs/arrow.svg" alt="icon" width="48" height="48">
+                    <p class="cs-text">
+                        Therapeutic stone massage training for practitioners seeking to add this popular relaxing treatment to their service menu.
+                    </p>
+                </a>
+               <picture class="cs-picture">
+                    <!--Mobile Image -->
+                    <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/course/hot-stone.jpg" | resize({width: 576, height: 320}) | avif %}" type="image/avif">
+                    <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/course/hot-stone.jpg" | resize({width: 576, height: 320}) | webp %}" type="image/webp">
+                    <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/course/hot-stone.jpg" | resize({width: 576, height: 320}) | jpeg %}" type="image/jpeg">
+                    <!--Tablet Image -->
+                    <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/course/hot-stone.jpg" | resize({width: 576, height: 320}) | avif %}" type="image/avif">
+                    <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/course/hot-stone.jpg" | resize({width: 576, height: 320}) | webp %}" type="image/webp">
+                    <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/course/hot-stone.jpg" | resize({width: 576, height: 320}) | jpeg %}" type="image/jpeg">
+                    <img src="{% getUrl "/assets/images/course/hot-stone.jpg" | resize({width: 576, height: 320}) | jpeg %}" alt="hot stone therapy" width="352" height="440" loading="lazy" decoding="async" aria-hidden="true">
+                </picture>
+            </li>
+            <li class="cs-li">
                 <span class="cs-number">05</span>
                 <a class="cs-link" href="/pregnancy-massage/">
                     <h3 class="cs-h3">CPD Pregnancy Massage</h3>
                     <img class="cs-icon" loading="lazy" decoding="async" src="/assets/svgs/arrow.svg" alt="icon" width="48" height="48">
                     <p class="cs-text">
-                        Choose from our range of Photo booth options, including open-air to suit your wedding theme and style.
+                        Specialist prenatal massage training for therapists wanting to safely treat expectant mothers throughout all pregnancy stages.
                     </p>
                 </a>
                 <picture class="cs-picture">
@@ -453,7 +451,7 @@ eleventyNavigation:
                     <h3 class="cs-h3">CPD Lymphatic Drainage</h3>
                     <img class="cs-icon" loading="lazy" decoding="async" src="/assets/svgs/arrow.svg" alt="icon" width="48" height="48">
                     <p class="cs-text">
-                        Choose from our range of Photo booth options, including open-air to suit your wedding theme and style.
+                        Gentle drainage techniques for detoxification and wellness, perfect for practitioners treating post-surgical or chronic condition clients.
                     </p>
                 </a>
                 <picture class="cs-picture">
@@ -470,53 +468,11 @@ eleventyNavigation:
             </li>
             <li class="cs-li">
                 <span class="cs-number">07</span>
-                <a class="cs-link" href="/hot-stone-therapy/">
-                    <h3 class="cs-h3">CPD Hot Stone Therapy</h3>
-                    <img class="cs-icon" loading="lazy" decoding="async" src="/assets/svgs/arrow.svg" alt="icon" width="48" height="48">
-                    <p class="cs-text">
-                        Choose from our range of Photo booth options, including open-air to suit your wedding theme and style.
-                    </p>
-                </a>
-                <picture class="cs-picture">
-                    <!--Mobile Image -->
-                    <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/course/hot-stone.jpg" | resize({width: 576, height: 320}) | avif %}" type="image/avif">
-                    <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/course/hot-stone.jpg" | resize({width: 576, height: 320}) | webp %}" type="image/webp">
-                    <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/course/hot-stone.jpg" | resize({width: 576, height: 320}) | jpeg %}" type="image/jpeg">
-                    <!--Tablet Image -->
-                    <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/course/hot-stone.jpg" | resize({width: 576, height: 320}) | avif %}" type="image/avif">
-                    <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/course/hot-stone.jpg" | resize({width: 576, height: 320}) | webp %}" type="image/webp">
-                    <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/course/hot-stone.jpg" | resize({width: 576, height: 320}) | jpeg %}" type="image/jpeg">
-                    <img src="{% getUrl "/assets/images/course/hot-stone.jpg" | resize({width: 576, height: 320}) | jpeg %}" alt="hot stone therapy" width="352" height="440" loading="lazy" decoding="async" aria-hidden="true">
-                </picture>
-            </li>
-            <li class="cs-li">
-                <span class="cs-number">08</span>
-                <a class="cs-link" href="/foot-reflexology/">
-                    <h3 class="cs-h3">CPD Foot Reflexology</h3>
-                    <img class="cs-icon" loading="lazy" decoding="async" src="/assets/svgs/arrow.svg" alt="icon" width="48" height="48">
-                    <p class="cs-text">
-                        Choose from our range of Photo booth options, including open-air to suit your wedding theme and style.
-                    </p>
-                </a>
-                <picture class="cs-picture">
-                    <!--Mobile Image -->
-                    <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/course/foot-massage.jpg" | resize({width: 576, height: 320}) | avif %}" type="image/avif">
-                    <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/course/foot-massage.jpg" | resize({width: 576, height: 320}) | webp %}" type="image/webp">
-                    <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/course/foot-massage.jpg" | resize({width: 576, height: 320}) | jpeg %}" type="image/jpeg">
-                    <!--Tablet Image -->
-                    <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/course/foot-massage.jpg" | resize({width: 576, height: 320}) | avif %}" type="image/avif">
-                    <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/course/foot-massage.jpg" | resize({width: 576, height: 320}) | webp %}" type="image/webp">
-                    <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/course/foot-massage.jpg" | resize({width: 576, height: 320}) | jpeg %}" type="image/jpeg">
-                    <img src="{% getUrl "/assets/images/course/foot-massage.jpg" | resize({width: 576, height: 320}) | jpeg %}" alt="foot reflexology" width="352" height="440" loading="lazy" decoding="async" aria-hidden="true">
-                </picture>
-            </li>
-            <li class="cs-li">
-                <span class="cs-number">09</span>
                 <a class="cs-link" href="/indian-head-massage/">
                     <h3 class="cs-h3">CPD Indian Head Massage</h3>
                     <img class="cs-icon" loading="lazy" decoding="async" src="/assets/svgs/arrow.svg" alt="icon" width="48" height="48">
                     <p class="cs-text">
-                        Choose from our range of Photo booth options, including open-air to suit your wedding theme and style.
+                        Traditional Ayurvedic head massage with chakra balancing, ideal for practitioners seeking authentic holistic healing techniques.
                     </p>
                 </a>
                 <picture class="cs-picture">
@@ -532,12 +488,12 @@ eleventyNavigation:
                 </picture>
             </li>
             <li class="cs-li">
-                <span class="cs-number">10</span>
+                <span class="cs-number">08</span>
                 <a class="cs-link" href="/japanese-head-spa/">
                     <h3 class="cs-h3">CPD Japanese Head Spa</h3>
                     <img class="cs-icon" loading="lazy" decoding="async" src="/assets/svgs/arrow.svg" alt="icon" width="48" height="48">
                     <p class="cs-text">
-                        Choose from our range of Photo booth options, including open-air to suit your wedding theme and style.
+                        Luxury scalp treatment combining wellness and relaxation, perfect for practitioners wanting to offer trending spa experiences.
                     </p>
                 </a>
                 <picture class="cs-picture">
@@ -553,12 +509,12 @@ eleventyNavigation:
                 </picture>
             </li>
             <li class="cs-li">
-                <span class="cs-number">11</span>
+                <span class="cs-number">09</span>
                 <a class="cs-link" href="/facial-massage/">
-                    <h3 class="cs-h3">CPD Facial Massage</h3>
+                    <h3 class="cs-h3">CPD Facial Massage + Gua Sha Lifting</h3>
                     <img class="cs-icon" loading="lazy" decoding="async" src="/assets/svgs/arrow.svg" alt="icon" width="48" height="48">
                     <p class="cs-text">
-                        Choose from our range of Photo booth options, including open-air to suit your wedding theme and style.
+                        Traditional Chinese lifting techniques for natural face sculpting, ideal for beauty therapists seeking anti-aging treatment skills.
                     </p>
                 </a>
                 <picture class="cs-picture">
@@ -571,6 +527,48 @@ eleventyNavigation:
                     <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/course/facial-massage.jpg" | resize({width: 576, height: 320}) | webp %}" type="image/webp">
                     <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/course/facial-massage.jpg" | resize({width: 576, height: 320}) | jpeg %}" type="image/jpeg">
                     <img src="{% getUrl "/assets/images/course/facial-massage.jpg" | resize({width: 576, height: 320}) | jpeg %}" alt="Facial Massage" width="352" height="440" loading="lazy" decoding="async" aria-hidden="true">
+                </picture>
+            </li>
+            <li class="cs-li">
+                <span class="cs-number">10</span>
+                <a class="cs-link" href="/swedish-massage/">
+                    <h3 class="cs-h3">CPD Swedish Massage</h3>
+                    <img class="cs-icon" loading="lazy" decoding="async" src="/assets/svgs/arrow.svg" alt="icon" width="48" height="48">
+                    <p class="cs-text">
+                        Foundation massage techniques essential for all bodywork practitioners, perfect for beginners building their core massage skills.
+                    </p>
+                </a>
+                <picture class="cs-picture">
+                    <!--Mobile Image -->
+                    <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/course/swedish.jpg" | resize({width: 576, height: 320}) | avif %}" type="image/avif">
+                    <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/course/swedish.jpg" | resize({width: 576, height: 320}) | webp %}" type="image/webp">
+                    <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/course/swedish.jpg" | resize({width: 576, height: 320}) | jpeg %}" type="image/jpeg">
+                    <!--Tablet Image -->
+                    <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/course/swedish.jpg" | resize({width: 576, height: 320}) | avif %}" type="image/avif">
+                    <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/course/swedish.jpg" | resize({width: 576, height: 320}) | webp %}" type="image/webp">
+                    <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/course/swedish.jpg" | resize({width: 576, height: 320}) | jpeg %}" type="image/jpeg">
+                    <img src="{% getUrl "/assets/images/course/swedish.jpg" | resize({width: 576, height: 320}) | jpeg %}" alt="Swedish massage" width="352" height="440" loading="lazy" decoding="async" aria-hidden="true">
+                </picture>
+            </li>
+            <li class="cs-li">
+                <span class="cs-number">11</span>
+                <a class="cs-link" href="/raindrop/">
+                    <h3 class="cs-h3">CPD Raindrop Therapy</h3>
+                    <img class="cs-icon" loading="lazy" decoding="async" src="/assets/svgs/arrow.svg" alt="icon" width="48" height="48">
+                    <p class="cs-text">
+                        Essential oil healing therapy combining aromatherapy and massage, ideal for holistic practitioners seeking unique therapeutic modalities.
+                    </p>
+                </a>
+                <picture class="cs-picture">
+                    <!--Mobile Image -->
+                    <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/course/raindrop.jpg" | resize({width: 576, height: 320}) | avif %}" type="image/avif">
+                    <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/course/raindrop.jpg" | resize({width: 576, height: 320}) | webp %}" type="image/webp">
+                    <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/course/raindrop.jpg" | resize({width: 576, height: 320}) | jpeg %}" type="image/jpeg">
+                    <!--Tablet Image -->
+                    <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/course/raindrop.jpg" | resize({width: 576, height: 320}) | avif %}" type="image/avif">
+                    <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/course/raindrop.jpg" | resize({width: 576, height: 320}) | webp %}" type="image/webp">
+                    <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/course/raindrop.jpg" | resize({width: 576, height: 320}) | jpeg %}" type="image/jpeg">
+                    <img src="{% getUrl "/assets/images/course/raindrop.jpg" | resize({width: 576, height: 320}) | jpeg %}" alt="raindrop therapy" width="352" height="440" loading="lazy" decoding="async" aria-hidden="true">
                 </picture>
             </li>
         </ul>
@@ -586,18 +584,18 @@ eleventyNavigation:
         <div class="cs-image-group">
             <picture class="cs-picture">
                 <!--Mobile Image -->
-                <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/popular-1.jpg" | resize({width: 471, height: 615}) | avif %}" type="image/avif">
-                <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/popular-1.jpg" | resize({width: 471, height: 615}) | webp %}" type="image/webp">
-                <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/popular-1.jpg" | resize({width: 471, height: 615}) | jpeg %}" type="image/jpeg">
+                <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/contact-form.jpg" | resize({width: 471, height: 615}) | avif %}" type="image/avif">
+                <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/contact-form.jpg" | resize({width: 471, height: 615}) | webp %}" type="image/webp">
+                <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/contact-form.jpg" | resize({width: 471, height: 615}) | jpeg %}" type="image/jpeg">
                 <!--Tablet Image -->
-                <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/popular-1.jpg" | resize({width: 932, height: 1216}) | avif %}" type="image/avif">
-                <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/popular-1.jpg" | resize({width: 932, height: 1216}) | webp %}" type="image/webp">
-                <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/popular-1.jpg" | resize({width: 932, height: 1216}) | jpeg %}" type="image/jpeg">
+                <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/contact-form.jpg" | resize({width: 932, height: 1216}) | avif %}" type="image/avif">
+                <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/contact-form.jpg" | resize({width: 932, height: 1216}) | webp %}" type="image/webp">
+                <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/contact-form.jpg" | resize({width: 932, height: 1216}) | jpeg %}" type="image/jpeg">
                 <!--Desktop Image -->
-                <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/popular-1.jpg" | resize({width: 1036, height: 1352}) | avif %}" type="image/avif">
-                <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/popular-1.jpg" | resize({width: 1036, height: 1352}) | webp %}" type="image/webp">
-                <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/popular-1.jpg" | resize({width: 1036, height: 1352}) | jpeg %}" type="image/jpeg">
-                <img src="{% getUrl "/assets/images/popular-1.jpg" | resize({width: 1036, height: 1352}) | jpeg %}" alt="image description" width="518" height="676" loading="lazy" decoding="async" aria-hidden="true">
+                <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/contact-form.jpg" | resize({width: 1036, height: 1352}) | avif %}" type="image/avif">
+                <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/contact-form.jpg" | resize({width: 1036, height: 1352}) | webp %}" type="image/webp">
+                <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/contact-form.jpg" | resize({width: 1036, height: 1352}) | jpeg %}" type="image/jpeg">
+                <img src="{% getUrl "/assets/images/contact-form.jpg" | resize({width: 1036, height: 1352}) | jpeg %}" alt="image description" width="518" height="676" loading="lazy" decoding="async" aria-hidden="true">
             </picture>
             <img class="cs-graphic cs-brown" loading="lazy" decoding="async" src="/assets/svgs/gold-lines.svg" alt="graphic" width="208" height="203" aria-hidden="true">
             <img class="cs-graphic cs-beige" loading="lazy" decoding="async" src="/assets/svgs/gold-blob2.svg" alt="graphic" width="379" height="394" aria-hidden="true">
@@ -606,23 +604,17 @@ eleventyNavigation:
             <img class="cs-graphic cs-lines" loading="lazy" decoding="async" src="/assets/svgs/gold-grid.svg" alt="graphic" width="189" height="208" aria-hidden="true">
         </div>
         <div class="cs-content">
-            <span class="cs-topper">Book Appointment</span>
-            <h2 class="cs-title">Book an Appointment</h2>
+            <span class="cs-topper">Get Started</span>
+            <h2 class="cs-title">Contact Us</h2>
             <!--Form-->
-            <form class="cs-form" id="cs-form-1879" name="Contact Form" method="post" netlify>
-            <!-- Netlify honeypot field for spam protection -->
-            <input type="hidden" name="form-name" value="Contact Form" />
-            <div style="display: none;">
-                <label>Don't fill this out if you're human: <input name="bot-field" /></label>
-            </div>
-            
+            <form class="cs-form" id="cs-form-1879" name="Contact Form" method="post" data-netlify="true"><input type="hidden" name="form-name" value="Contact Form" />
             <label class="cs-label">
                 First Name*
-                <input class="cs-input" required type="text" id="first-name-1879" name="first-name" placeholder="John">
+                <input class="cs-input" required type="text" id="first-name-1879" name="first-name" placeholder="Chantana">
             </label>
             <label class="cs-label">
                 Last Name*
-                <input class="cs-input" required type="text" id="last-name-1879" name="last-name" placeholder="Moore">
+                <input class="cs-input" required type="text" id="last-name-1879" name="last-name" placeholder="Adulyadej">
             </label>
             <label class="cs-label">
                 Email*
@@ -630,7 +622,7 @@ eleventyNavigation:
             </label>
             <label class="cs-label">
                 Phone*
-                <input class="cs-input" required type="tel" id="phone-1879" name="phone" placeholder="+1 (206) 987-6543">
+                <input class="cs-input" required type="tel" id="phone-1879" name="phone" placeholder="07967 899076">
             </label>
             <label class="cs-label cs-message">
                 Message*
@@ -638,7 +630,7 @@ eleventyNavigation:
             </label>
             <button class="cs-button-solid cs-submit" type="submit">Send Message</button>
             <p class="cs-text">
-                By filling out this form you agree to receive email, text, and phone communications from Balanced Skin Dermatology and Aesthetics
+                By filling out this form you agree to receive email, text, and phone communications from Kru Goy UK
             </p>
         </form>
         </div>
