@@ -7,17 +7,17 @@
     <div class="cs-top-bar">
         <div class="cs-top-container">
             <div class="cs-top-contact">
-                <a href="tel:{{client.phoneForTel}}" class="cs-top-link">
+                <a href="tel:{{client.phoneForTel}}" aria-label="phone" class="cs-top-link">
                     <img class="cs-link-icon" src="/assets/svgs/phone-grey.svg" alt="logo" width="16" height="16" aria-hidden="true" decoding="async">
                     Call us: {{client.phoneFormatted}}
                 </a>
-                <a href="" class="cs-top-link">
+                <a href="{{client.address.mapLink}}" target="_blank" aria-label="google maps" class="cs-top-link">
                     <img class="cs-link-icon" src="/assets/svgs/clock-grey.svg" alt="logo" width="20" height="20" aria-hidden="true" decoding="async">
                     Opening hours: Mon - Sat: 8:00am To 9:00pm
                 </a>
             </div>
             <div class="cs-top-social">
-                <a href="{{client.socials.facebook}}" target="_blank" class="cs-social-link">
+                <a href="{{client.socials.facebook}}" target="_blank" aria-label="facebook" class="cs-social-link">
                     <img class="cs-social-icon" src="/assets/svgs/face-grey.svg" alt="logo" width="12" height="12" aria-hidden="true" decoding="async">
                 </a>
             </div>

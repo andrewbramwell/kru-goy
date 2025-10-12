@@ -12,7 +12,7 @@ module.exports = {
         "state": "",
         "zip": "M1 4FH ",
         "country": "UK",
-        "mapLink": ""
+        "mapLink": "https://maps.app.goo.gl/RKyT39CZ4tRgJ8du5"
     },
     "socials": {
         "facebook": "https://www.facebook.com/kruGoySalisa",
