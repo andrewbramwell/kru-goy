@@ -1,6 +1,6 @@
 module.exports = {
     "name": "Kru Goy Uk",
-    "email": "",
+    "email": "krugoymassageinstructor@gmail.com",
     "phoneForTel": "+447415998445",
     "phoneFormatted": "07415 998445",
     "openingHours": "Mon-Sun: 10am-10pm",
@@ -27,7 +27,7 @@ module.exports = {
             "@type": ["EducationalOrganization", "LocalBusiness"],
             "@id": "https://thaimassageinstructor.co.uk/#business",
             "name": "Kru Goy Uk",
-            "image": "https://thaimassageinstructor.co.uk/assets/svgs/logo-pink2.svg",
+            "image": "https://thaimassageinstructor.co.uk/assets/svgs/logo.svg",
             "url": "https://thaimassageinstructor.co.uk",
             "telephone": "+447415998445",
             "priceRange": "££",
